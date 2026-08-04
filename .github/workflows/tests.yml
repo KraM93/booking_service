@@ -27,5 +27,8 @@ jobs:
           pip install pytest pytest-cov httpx
 
       - name: Запуск автотестов
+        env:
+          DATABASE_URL: "sqlite+aiosqlite:///:memory:"
+          SECRET_KEY: "super_secret_test_key_for_ci"
         run: |
           pytest
