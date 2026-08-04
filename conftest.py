@@ -5,6 +5,9 @@ from sqlalchemy.pool import StaticPool
 
 from database import Base, get_db
 from main import app
+from limiter import limiter
+
+limiter.enabled = False
 
 TEST_DATABASE_URL = "sqlite+aiosqlite:///:memory:"
 
