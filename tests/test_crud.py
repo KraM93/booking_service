@@ -63,7 +63,7 @@ async def test_crud_booking_and_user_seats(db_session: AsyncSession):
     assert user_seats[0].id == seat_to_book.id
 
 @pytest.mark.asyncio
-async def test_get_events_pagination(ac: AsyncClient):
-    response = await ac.get("/events/?limit=5&offset=0")
+async def test_get_events_pagination(client: AsyncClient):
+    response = await client.get("/events/?limit=5&offset=0")
     assert response.status_code == 200
     assert isinstance(response.json(), list)
