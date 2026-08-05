@@ -1,0 +1,72 @@
+2026-08-05 02:02:33.195 | INFO     | main:log_request:17 - Start request: GET /
+2026-08-05 02:02:33.204 | INFO     | main:log_request:19 - Completed: GET / | Status: 200
+2026-08-05 02:02:38.388 | INFO     | main:log_request:17 - Start request: GET /docs
+2026-08-05 02:02:38.389 | INFO     | main:log_request:19 - Completed: GET /docs | Status: 200
+2026-08-05 02:02:39.207 | INFO     | main:log_request:17 - Start request: GET /openapi.json
+2026-08-05 02:02:39.228 | INFO     | main:log_request:19 - Completed: GET /openapi.json | Status: 200
+2026-08-05 02:03:42.279 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 02:03:42.284 | INFO     | routers.users:register_user:20 - Попытка регистрации пользователя: user2@example.com
+2026-08-05 02:03:42.620 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 201
+2026-08-05 02:03:43.683 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 02:03:43.685 | INFO     | routers.users:register_user:20 - Попытка регистрации пользователя: user2@example.com
+2026-08-05 02:03:43.688 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 400
+2026-08-05 02:03:44.310 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 02:03:44.312 | INFO     | routers.users:register_user:20 - Попытка регистрации пользователя: user2@example.com
+2026-08-05 02:03:44.314 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 400
+2026-08-05 02:03:44.871 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 02:03:44.872 | INFO     | routers.users:register_user:20 - Попытка регистрации пользователя: user2@example.com
+2026-08-05 02:03:44.875 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 400
+2026-08-05 02:03:45.346 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 02:03:45.348 | INFO     | routers.users:register_user:20 - Попытка регистрации пользователя: user2@example.com
+2026-08-05 02:03:45.350 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 400
+2026-08-05 02:03:45.776 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 02:03:45.778 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 429
+2026-08-05 02:03:46.613 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 02:03:46.615 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 429
+2026-08-05 02:03:47.716 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 02:03:47.718 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 429
+2026-08-05 02:03:48.260 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 02:03:48.262 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 429
+2026-08-05 02:17:09.172 | INFO     | main:log_request:17 - Start request: GET /docs
+2026-08-05 02:17:09.173 | INFO     | main:log_request:19 - Completed: GET /docs | Status: 200
+2026-08-05 02:17:09.475 | INFO     | main:log_request:17 - Start request: GET /openapi.json
+2026-08-05 02:17:09.477 | INFO     | main:log_request:19 - Completed: GET /openapi.json | Status: 200
+2026-08-05 11:33:52.770 | INFO     | main:log_request:17 - Start request: GET /
+2026-08-05 11:33:52.782 | INFO     | main:log_request:19 - Completed: GET / | Status: 200
+2026-08-05 11:33:56.050 | INFO     | main:log_request:17 - Start request: GET /docs
+2026-08-05 11:33:56.050 | INFO     | main:log_request:19 - Completed: GET /docs | Status: 200
+2026-08-05 11:33:56.114 | INFO     | main:log_request:17 - Start request: GET /openapi.json
+2026-08-05 11:33:56.142 | INFO     | main:log_request:19 - Completed: GET /openapi.json | Status: 200
+2026-08-05 11:34:14.576 | INFO     | main:log_request:17 - Start request: GET /events/
+2026-08-05 11:34:14.656 | INFO     | main:log_request:19 - Completed: GET /events/ | Status: 200
+2026-08-05 11:34:30.803 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 11:34:30.828 | INFO     | routers.users:register_user:20 - Попытка регистрации пользователя: testuser@example.com
+2026-08-05 11:34:31.056 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 201
+2026-08-05 11:34:31.075 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 11:34:31.078 | INFO     | routers.users:register_user:20 - Попытка регистрации пользователя: duplicate@example.com
+2026-08-05 11:34:31.297 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 201
+2026-08-05 11:34:31.299 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 11:34:31.301 | INFO     | routers.users:register_user:20 - Попытка регистрации пользователя: duplicate@example.com
+2026-08-05 11:34:31.304 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 400
+2026-08-05 11:34:31.320 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 11:34:31.322 | INFO     | routers.users:register_user:20 - Попытка регистрации пользователя: loginuser@example.com
+2026-08-05 11:34:31.543 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 201
+2026-08-05 11:34:31.545 | INFO     | main:log_request:17 - Start request: POST /users/login
+2026-08-05 11:34:31.553 | INFO     | routers.users:login_user:45 - Попытка входа пользователя: loginuser@example.com
+2026-08-05 11:34:31.777 | INFO     | main:log_request:19 - Completed: POST /users/login | Status: 200
+2026-08-05 11:34:31.866 | INFO     | main:log_request:17 - Start request: POST /events/
+2026-08-05 11:34:31.877 | INFO     | main:log_request:19 - Completed: POST /events/ | Status: 201
+2026-08-05 11:34:31.897 | INFO     | main:log_request:17 - Start request: POST /users/
+2026-08-05 11:34:31.899 | INFO     | routers.users:register_user:20 - Попытка регистрации пользователя: user@test.com
+2026-08-05 11:34:32.119 | INFO     | main:log_request:19 - Completed: POST /users/ | Status: 201
+2026-08-05 11:34:32.121 | INFO     | main:log_request:17 - Start request: POST /users/login
+2026-08-05 11:34:32.126 | INFO     | routers.users:login_user:45 - Попытка входа пользователя: user@test.com
+2026-08-05 11:34:32.342 | INFO     | main:log_request:19 - Completed: POST /users/login | Status: 200
+2026-08-05 11:34:32.345 | INFO     | main:log_request:17 - Start request: POST /events/
+2026-08-05 11:34:32.371 | INFO     | main:log_request:19 - Completed: POST /events/ | Status: 201
+2026-08-05 11:34:32.374 | INFO     | main:log_request:17 - Start request: GET /events/1/seats
+2026-08-05 11:34:32.387 | INFO     | main:log_request:19 - Completed: GET /events/1/seats | Status: 200
+2026-08-05 11:34:32.389 | INFO     | main:log_request:17 - Start request: POST /seats/1/book
+2026-08-05 11:34:32.405 | INFO     | main:log_request:19 - Completed: POST /seats/1/book | Status: 200
+2026-08-05 11:34:32.420 | INFO     | main:log_request:17 - Start request: POST /seats/1/book
+2026-08-05 11:34:32.422 | INFO     | main:log_request:19 - Completed: POST /seats/1/book | Status: 401

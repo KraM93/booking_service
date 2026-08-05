@@ -6,6 +6,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from datetime import datetime
 from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel, ConfigDict
+from typing import Sequence
 
 async def get_db():
     async with async_sessionmaker() as session:
@@ -81,6 +82,22 @@ async def create_event_with_seats(
     await session.commit()
     print(f"Создано событие '{title}' и {len(seats)} мест!")
     return event.id
+
+async def get_events(
+        session: AsyncSession,
+        limit: int = 10,
+        offset: int = 0,
+        title: str | None = None,
+) -> Sequence[Event]:
+    query = select(Event)
+
+    if title:
+        query = query.where(Event.title.ilike(f"%{title}%"))
+
+    query = query.order_by(Event.id).offset(offset).limit(limit)
+
+    result = await session.execute(query)
+    return result.scalars().all()
 
 async def get_available_seats(event_id: int, session: AsyncSession):
     query = select(Seat).where(

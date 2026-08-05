@@ -1,6 +1,7 @@
 import pytest
 from sqlalchemy.ext.asyncio import AsyncSession
 from datetime import datetime
+from httpx import AsyncClient
 
 from crud import (
     create_user,
@@ -60,3 +61,9 @@ async def test_crud_booking_and_user_seats(db_session: AsyncSession):
     user_seats = await get_user_seats(new_user.id, db_session)
     assert len(user_seats) == 1
     assert user_seats[0].id == seat_to_book.id
+
+@pytest.mark.asyncio
+async def test_get_events_pagination(ac: AsyncClient):
+    response = await ac.get("/events/?limit=5&offset=0")
+    assert response.status_code == 200
+    assert isinstance(response.json(), list)
